@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="284.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculatorController">
+   <children>
+      <TextField fx:id="txt1" layoutX="32.0" layoutY="38.0" onKeyReleased="#check1" promptText="Premier nombre" />
+      <TextField fx:id="txt2" layoutX="32.0" layoutY="85.0" onKeyReleased="#check2" promptText="Deuxieme nombre" />
+      <Button fx:id="div" layoutX="47.0" layoutY="162.0" mnemonicParsing="false" onAction="#calculs" text="Division" />
+      <Button fx:id="sus" layoutX="133.0" layoutY="162.0" mnemonicParsing="false" onAction="#calculs" text="Sustraction" />
+      <Button fx:id="add" layoutX="155.0" layoutY="209.0" mnemonicParsing="false" onAction="#calculs" text="Addition" />
+      <Button fx:id="mul" layoutX="47.0" layoutY="209.0" mnemonicParsing="false" onAction="#calculs" text="Multiplication" />
+      <Label fx:id="result" layoutX="225.0" layoutY="57.0" text="Resultat" />
+      <Text layoutX="141.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculatrice" />
+   </children>
+</AnchorPane>
